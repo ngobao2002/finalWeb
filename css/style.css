@@ -1,8 +1,9 @@
 /*import font from google font*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Roboto:wght@100&family=Sofia&display=swap');
 :root{
-    --light-gray: #2b3032a1;
+    --light-gray: #f5f5f5;
     --primary-color: #2a2a2a;
+    --nav-color: #121212;
     --border: #2b303218;
     --text-color: #ff686b;
     --roboto: "Roboto", san-serif;
@@ -16,6 +17,9 @@
 
 .bg-primary-color{
     background-color: var(--primary-color) !important;
+}
+.bg-nav-color{
+    background-color: var(--nav-color);
 }
 
 .text-color{
@@ -48,4 +52,27 @@ header .site-title{
     font-size: 0.9em;
     text-decoration: none;
     color: white;
+}
+
+/*Navigation menu*/
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--light-gray) !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+
+.navbar-nav .search-icon{
+    color: var(--light-gray);
+}
+
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+    color: var(--light-gray);
 }
