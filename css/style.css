@@ -165,22 +165,12 @@ h2 {
     flex-shrink: 0;
 }
 .text1 {
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
-    text-overflow: ellipsis;
     color: #f5f5f5;
 }
-.box1-item {
-    transition: color 125ms ease-in-out;
-    color: rgb(245, 245, 245);
-    font-size: 9px;
-    line-height: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
 .item1 {
-    display: inline-flex;
+    font-size: 9px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
@@ -199,19 +189,12 @@ h2 {
 .discount {
     transition: color 125ms ease-in-out;
     color: rgba(245, 245, 245, 0.6);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 20px;
     letter-spacing: 0.2px;
 }
-.price {
-    transition: color 125ms ease-in-out;
-    color: rgb(245, 245, 245);
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-}
+
 .box2 {
     display: flex;
     flex: 1;
@@ -250,3 +233,22 @@ h2 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
 }
+.image:hover {
+    opacity: 0.5;
+}
+
+.box-image {
+    position: relative;  
+}
+ /* .box-image img {
+    width: 100%;
+    height: auto;
+ } */
+ .box-image .btn {
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    border-radius: 10rem;
+ }
+
