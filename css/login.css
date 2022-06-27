@@ -1,0 +1,139 @@
+/*import font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Roboto:wght@100&family=Sofia&display=swap');
+:root{
+    --light-gray: #f5f5f5;
+    --primary-color: #2a2a2a;
+    --nav-color: #121212;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", san-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.bg-primary-color{
+    background-color: var(--primary-color) !important;
+}
+.bg-nav-color{
+    background-color: var(--nav-color);
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+.lightblue{
+    color: lightblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--nav-color);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    min-height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.container .login-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+
+.container .login-email .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid{
+    border-color: #a29bfe;
+}
+
+
+.container .login-email .input-group .btn{
+    display: inline-block;
+    width: 300px;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text a {
+    color: white;
+}
+
+.privacy-text a {
+    color: white;
+}
+
+.all-sign-in-option a{
+    color: white;
+}
+@media (max-width: 430px) {
+    .container{
+        width: 300px;
+    }
+
+    .container .login-social{
+        display: block;
+    }
+
+    .container .login-social a {
+        display: block;
+    }
+}
+

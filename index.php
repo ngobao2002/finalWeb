@@ -16,6 +16,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online Store</title>
+
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.css">
 
   <!-- Font Awesome CDN -->
@@ -58,8 +60,8 @@
         </div>
         <div class="col-md-4 col-12 text-right">
           <p class="my-md-4 header-links">
-            <a href="#" class="px-2">Sign in</a>
-            <a href="#" class="px-1">Create an Account</a>
+            <a href="login.php" class="px-2">Sign in</a>
+            <a href="register.php" class="px-1">Create an Account</a>
           </p>
         </div>
       </div>
