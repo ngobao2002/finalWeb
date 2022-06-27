@@ -2,8 +2,8 @@
 
 // MySQLi 
 $servername = "fdb33.awardspace.net";
-$username = "4089860_peacefulteam";
-$database = "4089860_peacefulteam";
+$username = "4089966_peaceful";
+$database = "4089966_peaceful";
 $password = "o919640468";
 
 // create a connection
