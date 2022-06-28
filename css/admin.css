@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Roboto:wght@100&family=Sofia&display=swap');
+:root{
+    --light-gray: #f5f5f5;
+    --primary-color: #2a2a2a;
+    --nav-color: #121212;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", san-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.bg-primary-color{
+    background-color: var(--primary-color) !important;
+}
+.bg-nav-color{
+    background-color: var(--nav-color);
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+.lightblue{
+    color: lightblue;
+}
+.d-flex{
+    border-radius: 5px;
+}
+#order_placed{
+    background: rgb(181,221,212);
+    background: linear-gradient(90deg, rgba(181,221,212,1) 0%, rgba(25,212,166,1) 90%);
+}
+#completed_payment{
+    background: rgb(197,181,221);
+    background: linear-gradient(90deg, rgba(197,181,221,1) 0%, rgba(122,25,212,1) 90%);
+}
+#product_added{
+    background: rgb(208,178,145);
+    background: linear-gradient(90deg, rgba(208,178,145,1) 0%, rgba(212,91,25,1) 90%);
+}
+#total_pendings{
+    background: rgb(124,165,219);
+    background: linear-gradient(90deg, rgba(124,165,219,1) 0%, rgba(25,113,212,1) 90%);
+}
+#user{
+    background: rgb(242,139,105);
+    background: linear-gradient(90deg, rgba(242,139,105,1) 0%, rgba(212,25,25,1) 90%);
+}
+#admin{
+    background: rgb(219,204,86);
+    background: linear-gradient(90deg, rgba(219,204,86,1) 0%, rgba(171,166,0,1) 90%);
+}
+#total_account{
+    background: rgb(192,242,165);
+    background: linear-gradient(90deg, rgba(192,242,165,1) 0%, rgba(9,171,0,1) 90%);
+}
+#new_message{
+    background: rgb(120,152,237);
+    background: linear-gradient(90deg, rgba(120,152,237,1) 0%, rgba(0,11,201,1) 90%);
+}
+path{
+    margin-bottom: 20px;
+}
+h3{
+    color:white;
+}
+
