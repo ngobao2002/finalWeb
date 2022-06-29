@@ -79,16 +79,16 @@ if (isset($_POST['submit'])) {
         <form action = "" method="POST" class="login-email pt-2 ", style="color: white; text-align:center">
             <p class="login-text pt-2 font-roboto" style="text-align: center; font-size: 1.5rem; color: white; margin: 3; font-weight:800; ">Sign Up</p>
             <div class="input-group">
-                <input class="text-white" type="text" placeholder="Username" name="username" required>
+                <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
             </div>
             <div class="input-group">
-                <input class="text-white" type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="input-group">
-                <input class="text-white" type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
             </div>
             <div class="input-group">
-                <input class="text-white" type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+                <input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
             </div>
             <div class="input-group pt-3">
                 <button name="submit" class="btn mx-auto font-roboto">Register </button>
