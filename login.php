@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
         <form action="" method="POST" class="login-email pt-2 ", style="color: white; text-align:center">
             <p class="login-text pt-2" style="text-align: center; font-size: 1.5rem; color: white; margin: 3; font-weight:1000; ">Sign in with an Peaceful Games Account</p>
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $username; ?>" required>
+                <input class="text-white" type="email" placeholder="Email" name="email" value="<?php echo $username; ?>" required>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Password" name="password" <?php echo $password; ?> required>
