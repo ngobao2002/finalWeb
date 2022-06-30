@@ -51,8 +51,6 @@ if(isset($_POST['add_product'])){
 <html lang="en">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- CSS only -->
@@ -88,8 +86,66 @@ if(isset($_POST['add_product'])){
 <body class="bg-dark">
   <!--Header-->
 
+<<<<<<< HEAD
   <?php include 'header.php'; ?>
     
+=======
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+        </div>
+        
+        <!--Move Peaceful Store to the left-->
+        <div class="col-md-4 col-12 text-center">
+          <h2 class="my-md-3 site-title text-white">Peaceful Store</h2>
+        </div>
+        <div class="col-md-4 col-12 text-right">
+          <p class="my-md-4 header-links">
+            <a href="login.php" class="px-2">Sign in</a>
+            <a href="register.php" class="px-1">Create an Account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg: #212529">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link btn btn-outline-dark btn-floating " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-dark btn-floating " href="browse.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-dark btn-floating " href="#">About</a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+      
+    </div>
+
+  </header>
+>>>>>>> a53625bd92206bb8c5c93e13705c1b9b0a90417a
 
   <!--Main section-->
   <main>
@@ -133,7 +189,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Two -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/AC KINGDOM PREORDER_STANDARD EDITION_EPIC_Key_Art_Portrait_640x854-640x854-288120c5573756cb988b6c1968cebd86.jpg" alt="">
+            <img class="image img-fluid" src="./img2/AC.jpg" alt="">
             <div class="box1 pt-3">
               <div class="text1">Assassin's Creed® Valhalla Standard Edition</div>
               <div class="d-flex pt-2">
@@ -218,7 +274,7 @@ if(isset($_POST['add_product'])){
           <div class="col-md-4">
             <div class="box-image">
               <img src="./img2/egs-battlefield2042-dice-s1-2560x1440-2560x1440-3004c8a4629f.jpg"
-                class="image img-fluid rounded-4">
+                class="image img-fluid rounded-4" alt="">
               <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
@@ -236,7 +292,7 @@ if(isset($_POST['add_product'])){
           <div class="col-md-4">
             <div class="box-image">
               <img src="./img2/en-egs-fn-naruto-rivals-breaker-1920x1080-380c0df5250b.jpg"
-                class="image img-fluid rounded-4">
+                class="image img-fluid rounded-4" alt="">
               <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
@@ -250,7 +306,7 @@ if(isset($_POST['add_product'])){
           <div class="col-md-4">
             <div class="box-image">
               <img src="./img2/egs-a-plague-tale-requiem-breaker-1920x1080-a9b3d01272f0.jpg"
-                class="image img-fluid rounded-4">
+                class="image img-fluid rounded-4" alt="">
               <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
@@ -276,7 +332,7 @@ if(isset($_POST['add_product'])){
               <!-- One -->
               <div class="col-lg-3">
                 <div>
-                  <img src="./img2/download-a-game-of-thrones-offer-1q8ei.jpg" class="image img-fluid rounded-top">
+                  <img src="./img2/download-a-game-of-thrones-offer-1q8ei.jpg" class="image img-fluid rounded-top" alt="">
                   <button type="button" class="btn btn-primary" style="width:100%">FREE NOW</button>
                 </div>
                 <div class="container p-2">
@@ -290,7 +346,7 @@ if(isset($_POST['add_product'])){
                 <div>
                   <img
                     src="./img2/EGS_CarMechanicSimulator2018_RedDotGames_S2_1200x1600-f285924f9144353f57ac4631f0c689e6.jpg"
-                    class="image img-fluid rounded-top">
+                    class="image img-fluid rounded-top" alt="">
                   <button type="button" class="btn btn-primary" style="width:100%">FREE NOW</button>
                 </div>
                 <div class="container p-2">
@@ -303,7 +359,7 @@ if(isset($_POST['add_product'])){
                 <div>
                   <img
                     src="./img2/egs-geneforge1mutagen-spiderwebsoftware-s2-1200x1600-047ee886480c-1200x1600-668dc5abed1824b419b20b21c362904e.jpg"
-                    class="image img-fluid rounded-top">
+                    class="image img-fluid rounded-top" alt="">
                   <button type="button" class="btn btn-dark" style="width:100%">COMING SOON</button>
                 </div>
                 <div class="container p-2">
@@ -315,7 +371,7 @@ if(isset($_POST['add_product'])){
               <div class="col-lg-3">
                 <div>
                   <img src="./img2/download-iratus--lord-of-the-dead-offer-1ucid.jpg"
-                    class="image img-fluid rounded-top">
+                    class="image img-fluid rounded-top" alt="">
                   <button type="button" class="btn btn-dark" style="width:100%">COMING SOON</button>
                 </div>
                 <div class="container p-2">
@@ -468,7 +524,7 @@ if(isset($_POST['add_product'])){
         <div class="row">
           <!-- One -->
           <div class="col-md-6">
-            <img src="./img2/godofwar.png" class="image img-fluid rounded-4">
+            <img src="./img2/godofwar.png" class="image img-fluid rounded-4" alt="">
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">God Of War - 50% off</h2>
               <p style="color: grey;text-align: left;">Venture into the brutal Norse realms and fight to fulfill a
@@ -482,7 +538,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Two -->
           <div class="col-md-6">
-            <img src="./img2/roller.png" class="img-fluid rounded-4">
+            <img src="./img2/roller.png" class="img-fluid rounded-4" alt="">
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">Roller Champions - Play for Free!</h2>
               <p style="color: grey;text-align: left;">Welcome to Disco Fever, Season 1 of Roller Champions! Download
@@ -673,7 +729,7 @@ if(isset($_POST['add_product'])){
           <!-- One -->
           <div class="col-md-6">
             <img src="./img2/egs-goodcompany-chasingcarrots-s1-2560x1440-2560x1440-60b8725ddc66.png"
-              class="image img-fluid rounded-4">
+              class="image img-fluid rounded-4" alt="">
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">Good Company</h2>
               <p style="color: grey;text-align: left;">Build your own trail-blazing tech corporation and become a
@@ -687,7 +743,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Two -->
           <div class="col-md-6">
-            <img src="./img2/egs-thecycle-frontier-breaker-1920x1080-8c79558869c9.png" class="img-fluid rounded-4">
+            <img src="./img2/egs-thecycle-frontier-breaker-1920x1080-8c79558869c9.png" class="img-fluid rounded-4" alt="">
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">The Cycle: Frontier - Season 1</h2>
               <p style="color: grey;text-align: left;">The Cycle: Frontier is live now! Experience this PvPvE Extraction
@@ -854,7 +910,7 @@ if(isset($_POST['add_product'])){
         <div class="row">
           <!-- One -->
           <div class="col-md-8">
-            <img src="./img2/e2e8a321c10b02555b1a.jpg" class="image img-fluid rounded-4">
+            <img src="./img2/e2e8a321c10b02555b1a.jpg" class="image img-fluid rounded-4" alt="">
           </div>
           <!-- Two -->
           <div class="col-md-4">
