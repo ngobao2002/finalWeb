@@ -11,7 +11,7 @@ if (isset($_POST['username'])) {
 
 if (isset($_POST['submit'])) {
     $email= $_POST['email'];
-    $password = md5($_POST['password']);
+    $password = $_POST['password'];
     
     $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
     $result = mysqli_query($conn, $sql);
