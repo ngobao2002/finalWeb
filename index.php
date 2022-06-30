@@ -43,17 +43,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-12 col-12">
-          <div class="btn-group">
-            <!--Sau đổi thành nút điều chỉnh ngôn ngữ-->
-            <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              USD
-            </button>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">ERU-Euro</a>
-            </div>
-          </div>
         </div>
+        
         <!--Move Peaceful Store to the left-->
         <div class="col-md-4 col-12 text-center">
           <h2 class="my-md-3 site-title text-white">Peaceful Store</h2>
@@ -67,49 +58,49 @@
       </div>
     </div>
 
-    <div class="container-fluid p-0 ">
-      <nav class="navbar navbar-expand-lg bg-nav-color">
+    <div class="container p-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg: #212529">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FEATURES</a>
+                <a class="nav-link" href="#">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">COLLECTION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SHOP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="navbar-nav">
-          <li class="nav-item border rounded-circle mx-2 search-icon">
-            <i class="fa-solid fa-magnifying-glass p-2"></i>
-          </li>
-          <li class="nav-item border rounded-circle mx-2 basket-icon">
-            <i class="fa-solid fa-basket-shopping p-2"></i>
-          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
         </div>
       </nav>
+      
     </div>
 
   </header>
 
   <!--Main section-->
   <main>
+
+    
     <!--First Slider-->
+    
     <div class="container-fluid bg-dark">
       <div class="site-slider">
         <div class="slider-one container px-5">
@@ -123,12 +114,9 @@
             <img src="./img/home6.jpg" class="img-fluid" alt="Banner 3">
           </div>
         </div>
-        <div class="slider-btn">
-          <span class="prev position-top"><i class="fas fa-chevron-left"></i></span>
-          <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
-        </div>
       </div>
     </div>
+    
 
     <!-- Element-one -->
     <div class="container p-5">
