@@ -15,6 +15,7 @@
   
 </head>
 <body class="bg-dark">
+    <?php include 'header.php'; ?>
     <div class="container border-bottom" >
         <div class="row p-4">
             <div class="col-md-6 d-flex justify-content-center align-items-center text-white flex-column mb-2" style="height: 500px">
@@ -106,8 +107,9 @@
         </div>
     </div>
     </div>
-
+    <?php include 'footer.php'; ?>
 </body>
+
 <script>
     $(document).ready(function() {
         $('.counter').each(function () {
