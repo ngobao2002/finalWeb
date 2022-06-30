@@ -7,6 +7,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="./css/game.css" rel="stylesheet" type="text/css"/>
   <script src="./js/main.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -21,13 +23,14 @@
                 <div class="d-flex justify-content-between">
                     <div class="d-flex flex-column ps-5 pe-5">
                         <h5 >Viewing</h5>
-                        <span class="counter text-center">100</span>
+                        <span class="counter text-center">50535</span>
                     </div>
                     <div class="d-flex flex-column ps-5 pe-5">
                         <h5 >User</h5>
-                        <span class="counter text-center">100</span>
+                        <span class="counter text-center">1052</span>
                     </div>
                 </div>
+                <a href="index.php" class="btn btn-info mt-3">View Store</a>
             </div>
             <div class="col-md-6">
                 <div class="text-center pt-2">
@@ -42,41 +45,41 @@
     <div class="row slideanim">
         <div class="col-sm-4">
         <span class="glyphicon glyphicon-off logo-small"></span>
-        <h4>POWER</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4>Fast</h4>
+        <p>We bring speed through transactions</p>
         </div>
         <div class="col-sm-4">
         <span class="glyphicon glyphicon-heart logo-small"></span>
-        <h4>LOVE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4>Convenient</h4>
+        <p>Convenience comes from buying</p>
         </div>
         <div class="col-sm-4">
         <span class="glyphicon glyphicon-lock logo-small"></span>
-        <h4>JOB DONE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4>Complete</h4>
+        <p>Just a few steps for you to own the item</p>
         </div>
     </div>
     <br><br>
     <div class="row slideanim">
         <div class="col-sm-4">
         <span class="glyphicon glyphicon-leaf logo-small"></span>
-        <h4>GREEN</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4>Technology</h4>
+        <p>We use the most advanced technology to develop the website</p>
         </div>
         <div class="col-sm-4">
         <span class="glyphicon glyphicon-certificate logo-small"></span>
-        <h4>CERTIFIED</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4>Certified</h4>
+        <p>Certified by company XXX</p>
         </div>
         <div class="col-sm-4">
         <span class="glyphicon glyphicon-wrench logo-small"></span>
-        <h4 style="color:#303030;">HARD WORK</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4 >Service</h4>
+        <p>We are always at your service</p>
         </div>
     </div>
     </div>
 
-    <div id="contact" class="container bg-grey" style="color:white">
+    <div id="contact" class="container bg-grey pt-3" style="color:white">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
         <div class="col-sm-5">
