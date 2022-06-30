@@ -100,5 +100,6 @@ if(!isset($admin_id)){
             </div>
         </div>
     </div>
+    <?php include 'admin_footer.php'; ?>
 </body>    
 </html>

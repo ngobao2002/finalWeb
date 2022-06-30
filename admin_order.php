@@ -37,6 +37,7 @@ if(isset($_GET['delete'])){
     <title >Admin Placed Order</title>
 </head>
 <body class="bg-primary-color p-2">
+    <?php include 'admin_header.php'; ?>
     <h1 class="mx-auto py-3 text-color" style="width: 500px;text-align: center; padding-bottom: 25px;">Admin Placed Order</h1>
     <div class="container">
         <?php
@@ -87,6 +88,6 @@ if(isset($_GET['delete'])){
         </div>
     </div>
 
-        
+    <?php include 'admin_footer.php'; ?>   
 </body>
 </html>

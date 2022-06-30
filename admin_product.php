@@ -87,8 +87,9 @@ if(isset($_POST['update_product'])){
     <link href="../css/admin.css" rel="stylesheet" type="text/css"/>
     <title >Admin Products</title>
 </head>
-<?php include 'admin_header.php'; ?>
+
 <body>
+   <?php include 'admin_header.php'; ?>
     <section class="add-games">
         <h1 class="mx-auto p-5 text-color" style="width: 300px;text-align: center; ">Products</h1>
         <div class="d-flex justify-content-center" >
@@ -166,6 +167,8 @@ if(isset($_POST['update_product'])){
          ?>
       </div>
    </section>
+
+   <?php include 'admin_footer.php'; ?>
 
    <script src="./js/main.js"></script>
 </body>

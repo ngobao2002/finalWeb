@@ -119,7 +119,7 @@ if(isset($_POST['add_product'])){
         <div class="swiper-wrapper">
           <!-- One -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt="">
+            <a href="game.php"><img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt=""></a>
             <div class="box1 pt-3">
               <div class="text1">Rainbow Six Siege Standard Edition</div>
               <div class="d-flex pt-2">
@@ -131,7 +131,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Two -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/AC.jpg" alt="">
+            <a href="game.php"><img class="image img-fluid" src="./img2/AC.jpg" alt=""></a>
             <div class="box1 pt-3">
               <div class="text1">Assassin's Creed® Valhalla Standard Edition</div>
               <div class="d-flex pt-2">
@@ -143,7 +143,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Three -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7.jpg" alt="">
+            <a href="game.php"><img class="image img-fluid" src="./img2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7.jpg" alt=""></a>
             <div class="box1 pt-3">
               <div class="text1">God Of War</div>
               <div class="d-flex pt-2">
@@ -155,7 +155,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Four -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/download-the-caligula-effect-2-offer-wbx8l.jpg" alt="">
+            <a href="game.php"><img class="image img-fluid" src="./img2/download-the-caligula-effect-2-offer-wbx8l.jpg" alt=""></a>
             <div class="box1 pt-3">
               <div class="text1">The Caligula Effect 2</div>
               <div class="d-flex pt-2">
@@ -167,7 +167,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Five -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/download-the-kings-bird-offer-1ckoh.jpg" alt="">
+            <a href="game.php"><img class="image img-fluid" src="./img2/download-the-kings-bird-offer-1ckoh.jpg" alt=""></a>
             <div class="box1">
               <div class="text1 pt-3">Car Mechanic Simulator 2018</div>
               <div class="d-flex pt-2">
@@ -196,7 +196,7 @@ if(isset($_POST['add_product'])){
                      while($fetch_products = mysqli_fetch_assoc($select_products)){
                ?>
               <form action="" method="post" class="col-3 card mx-2 bg-dark border border-light text-light">
-                <img class="image d-block w-100 p-4" src="./uploaded_game/<?php echo $fetch_products['image']; ?>" alt="" >
+                <a href="game.php"><img class="image d-block w-100 p-4" src="./uploaded_game/<?php echo $fetch_products['image']; ?>" alt="" ></a>
                 <div class="name"><?php echo $fetch_products['name']; ?></div>
                 <div class="price">$<?php echo $fetch_products['price']; ?></div>
               </form>
@@ -215,8 +215,8 @@ if(isset($_POST['add_product'])){
           <!-- One -->
           <div class="col-md-4">
             <div class="box-image">
-              <img src="./img2/egs-battlefield2042-dice-s1-2560x1440-2560x1440-3004c8a4629f.jpg"
-                class="image img-fluid rounded-4" alt="">
+              <a href="game.php"><img src="./img2/egs-battlefield2042-dice-s1-2560x1440-2560x1440-3004c8a4629f.jpg"
+                class="image img-fluid rounded-4" alt=""><a>
               <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
@@ -233,8 +233,8 @@ if(isset($_POST['add_product'])){
           <!-- Two -->
           <div class="col-md-4">
             <div class="box-image">
-              <img src="./img2/en-egs-fn-naruto-rivals-breaker-1920x1080-380c0df5250b.jpg"
-                class="image img-fluid rounded-4" alt="">
+              <a href="game.php"><img src="./img2/en-egs-fn-naruto-rivals-breaker-1920x1080-380c0df5250b.jpg"
+                class="image img-fluid rounded-4" alt=""></a>
               <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
@@ -247,8 +247,8 @@ if(isset($_POST['add_product'])){
           <!-- Three -->
           <div class="col-md-4">
             <div class="box-image">
-              <img src="./img2/egs-a-plague-tale-requiem-breaker-1920x1080-a9b3d01272f0.jpg"
-                class="image img-fluid rounded-4" alt="">
+              <a href="game.php"><img src="./img2/egs-a-plague-tale-requiem-breaker-1920x1080-a9b3d01272f0.jpg"
+                class="image img-fluid rounded-4" alt=""></a>
               <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
@@ -274,7 +274,7 @@ if(isset($_POST['add_product'])){
               <!-- One -->
               <div class="col-lg-3">
                 <div>
-                  <img src="./img2/download-a-game-of-thrones-offer-1q8ei.jpg" class="image img-fluid rounded-top" alt="">
+                  <a href="game.php"><img src="./img2/download-a-game-of-thrones-offer-1q8ei.jpg" class="image img-fluid rounded-top" alt=""></a>
                   <button type="button" class="btn btn-primary" style="width:100%">FREE NOW</button>
                 </div>
                 <div class="container p-2">
@@ -286,9 +286,9 @@ if(isset($_POST['add_product'])){
               <!-- Two -->
               <div class="col-lg-3">
                 <div>
-                  <img
+                  <a href="game.php"><img
                     src="./img2/EGS_CarMechanicSimulator2018_RedDotGames_S2_1200x1600-f285924f9144353f57ac4631f0c689e6.jpg"
-                    class="image img-fluid rounded-top" alt="">
+                    class="image img-fluid rounded-top" alt=""></a>
                   <button type="button" class="btn btn-primary" style="width:100%">FREE NOW</button>
                 </div>
                 <div class="container p-2">
@@ -299,9 +299,9 @@ if(isset($_POST['add_product'])){
               <!-- Three -->
               <div class="col-lg-3">
                 <div>
-                  <img
+                  <a href="game.php"><img
                     src="./img2/egs-geneforge1mutagen-spiderwebsoftware-s2-1200x1600-047ee886480c-1200x1600-668dc5abed1824b419b20b21c362904e.jpg"
-                    class="image img-fluid rounded-top" alt="">
+                    class="image img-fluid rounded-top" alt=""></a>
                   <button type="button" class="btn btn-dark" style="width:100%">COMING SOON</button>
                 </div>
                 <div class="container p-2">
@@ -312,8 +312,8 @@ if(isset($_POST['add_product'])){
               <!-- Four -->
               <div class="col-lg-3">
                 <div>
-                  <img src="./img2/download-iratus--lord-of-the-dead-offer-1ucid.jpg"
-                    class="image img-fluid rounded-top" alt="">
+                  <a href="game.php"><img src="./img2/download-iratus--lord-of-the-dead-offer-1ucid.jpg"
+                    class="image img-fluid rounded-top" alt=""></a>
                   <button type="button" class="btn btn-dark" style="width:100%">COMING SOON</button>
                 </div>
                 <div class="container p-2">
@@ -332,7 +332,7 @@ if(isset($_POST['add_product'])){
           <div class="swiper-wrapper">
             <!-- One -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-the-caligula-effect-2-offer-wbx8l.jpg" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-the-caligula-effect-2-offer-wbx8l.jpg" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">The Caligula Effect 2</div>
                 <div class="d-flex pt-2">
@@ -344,7 +344,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Two -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/image.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/image.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Fall Guys</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -352,7 +352,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Three -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-my-lovely-wife-offer-qhscc.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-my-lovely-wife-offer-qhscc.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">My Lovely Wife</div>
                 <div class="pt-2" style="color: white;">₫165,000</div>
@@ -360,7 +360,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Four -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-gravitar-recharged-offer-1ylhh.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-gravitar-recharged-offer-1ylhh.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Gravitar Recharged</div>
                 <div class="pt-2" style="color: white;">₫93,000</div>
@@ -368,7 +368,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Five -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-house-party-offer-4n9bh.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-house-party-offer-4n9bh.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">House Party</div>
                 <div class="pt-2" style="color: white;">₫233,000</div>
@@ -376,7 +376,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Six -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-lamentum-offer-4o5si.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-lamentum-offer-4o5si.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Lamentum</div>
                 <div class="pt-2" style="color: white;">₫175,000</div>
@@ -384,7 +384,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Seven -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/redout.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/redout.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Redout: Enhanced Edition</div>
                 <div class="pt-2" style="color: white;">₫186,000</div>
@@ -392,7 +392,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Eight -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/skul.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/skul.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Skul: The Hero Slayer</div>
                 <div class="pt-2" style="color: white;">₫186,000</div>
@@ -400,7 +400,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Nine -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/salt.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/salt.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Salt and Sacrifice</div>
                 <div class="pt-2" style="color: white;">₫186,000</div>
@@ -466,7 +466,7 @@ if(isset($_POST['add_product'])){
         <div class="row">
           <!-- One -->
           <div class="col-md-6">
-            <img src="./img2/godofwar.png" class="image img-fluid rounded-4" alt="">
+            <a href="game.php"><img src="./img2/godofwar.png" class="image img-fluid rounded-4" alt=""></a>
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">God Of War - 50% off</h2>
               <p style="color: grey;text-align: left;">Venture into the brutal Norse realms and fight to fulfill a
@@ -480,7 +480,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Two -->
           <div class="col-md-6">
-            <img src="./img2/roller.png" class="img-fluid rounded-4" alt="">
+            <a href="game.php"><img src="./img2/roller.png" class="img-fluid rounded-4" alt=""></a>
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">Roller Champions - Play for Free!</h2>
               <p style="color: grey;text-align: left;">Welcome to Disco Fever, Season 1 of Roller Champions! Download
@@ -497,7 +497,7 @@ if(isset($_POST['add_product'])){
           <div class="swiper-wrapper">
             <!-- One -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/wonderland.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/wonderland.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Tiny Tina's Wonderlands</div>
                 <div class="pt-2" style="color: white;">₫1,000,000</div>
@@ -505,7 +505,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Two -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/hotwheels.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/hotwheels.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">HOT WHEELS UNLEASHED™</div>
                 <div class="pt-2" style="color: white;">₫499,000</div>
@@ -513,7 +513,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Three -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Rainbow Six Siege Standard Edition</div>
                 <div class="d-flex pt-2">
@@ -525,7 +525,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Four -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/survival.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/survival.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Surviving the Aftermath</div>
                 <div class="pt-2" style="color: white;">₫409,999</div>
@@ -533,7 +533,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Five -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/house.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/house.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">House Flipper</div>
                 <div class="pt-2" style="color: white;">₫220,000</div>
@@ -541,7 +541,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Six -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/sherlock.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/sherlock.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Sherlock Holmes Chapter One</div>
                 <div class="pt-2" style="color: white;">₫699,999</div>
@@ -549,7 +549,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Seven -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/idle.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/idle.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Idle Champions of the Forgotten Realms</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -557,7 +557,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Eight -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/rocket.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/rocket.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Rocket League®</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -565,7 +565,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Nine -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/tinhyeukhunglong.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/tinhyeukhunglong.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Jurassic World Evolution 2</div>
                 <div class="pt-2" style="color: white;">₫910,000</div>
@@ -581,7 +581,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Eleven -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/dragon.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/dragon.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Neverwinter</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -670,8 +670,8 @@ if(isset($_POST['add_product'])){
         <div class="row">
           <!-- One -->
           <div class="col-md-6">
-            <img src="./img2/egs-goodcompany-chasingcarrots-s1-2560x1440-2560x1440-60b8725ddc66.png"
-              class="image img-fluid rounded-4" alt="">
+            <a href="game.php"><img src="./img2/egs-goodcompany-chasingcarrots-s1-2560x1440-2560x1440-60b8725ddc66.png"
+              class="image img-fluid rounded-4" alt=""></a>
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">Good Company</h2>
               <p style="color: grey;text-align: left;">Build your own trail-blazing tech corporation and become a
@@ -685,7 +685,7 @@ if(isset($_POST['add_product'])){
           </div>
           <!-- Two -->
           <div class="col-md-6">
-            <img src="./img2/egs-thecycle-frontier-breaker-1920x1080-8c79558869c9.png" class="img-fluid rounded-4" alt="">
+            <a href="game.php"><img src="./img2/egs-thecycle-frontier-breaker-1920x1080-8c79558869c9.png" class="img-fluid rounded-4" alt=""></a>
             <div class="container p-2">
               <h2 style="text-align: left; color:white;font-size: 18px;">The Cycle: Frontier - Season 1</h2>
               <p style="color: grey;text-align: left;">The Cycle: Frontier is live now! Experience this PvPvE Extraction
@@ -702,7 +702,7 @@ if(isset($_POST['add_product'])){
           <div class="swiper-wrapper">
             <!-- One -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-the-caligula-effect-2-offer-wbx8l.jpg" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-the-caligula-effect-2-offer-wbx8l.jpg" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">The Caligula Effect 2</div>
                 <div class="d-flex pt-2">
@@ -714,7 +714,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Two -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/prison.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/prison.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Prison Architect</div>
                 <div class="pt-2" style="color: white;">₫249,998</div>
@@ -722,7 +722,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Three -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-lamentum-offer-4o5si.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-lamentum-offer-4o5si.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Lamentum</div>
                 <div class="pt-2" style="color: white;">₫175,000</div>
@@ -730,7 +730,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Four -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/eve.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/eve.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">EVE Online</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -738,7 +738,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Five -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Rainbow Six Siege Standard Edition</div>
                 <div class="d-flex pt-2">
@@ -750,7 +750,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Six -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/hextech.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/hextech.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Hextech Mayhem: A League of Legends Story™</div>
                 <div class="pt-2" style="color: white;">₫140,999</div>
@@ -758,7 +758,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Seven -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/rocket.png" alt="">
+            <a href="game.php"><img class="image img-fluid" src="./img2/rocket.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Rocket League®</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -766,7 +766,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Eight -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/skul.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/skul.png" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Skul: The Hero Slayer</div>
                 <div class="pt-2" style="color: white;">₫186,000</div>
@@ -786,7 +786,7 @@ if(isset($_POST['add_product'])){
           <div class="swiper-wrapper">
             <!-- One -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/image.png" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/image.png" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Fall Guys</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -794,8 +794,8 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Two -->
             <div class="swiper-slide">
-              <img class="image img-fluid"
-                src="./img2/XXXX_Store_Portrait_1200x1600_1200x1600-7a934dde19d172d4e9c51fce0a4114d8.jpg" alt="">
+              <a href="game.php"><img class="image img-fluid"
+                src="./img2/XXXX_Store_Portrait_1200x1600_1200x1600-7a934dde19d172d4e9c51fce0a4114d8.jpg" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">Roller Champions™</div>
                 <div class="pt-2" style="color: white;">Free</div>
@@ -803,7 +803,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Three -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-a-game-of-thrones-offer-1q8ei.jpg" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-a-game-of-thrones-offer-1q8ei.jpg" alt=""></a>
               <div class="box1 pt-3">
                 <div class="text1">A Game Of Thrones: The Board Game Digital Edition</div>
                 <div class="d-flex pt-2">
@@ -815,9 +815,9 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Four -->
             <div class="swiper-slide">
-              <img class="image img-fluid"
+              <a href="game.php"><img class="image img-fluid"
                 src="./img2/EGS_CarMechanicSimulator2018_RedDotGames_S2_1200x1600-f285924f9144353f57ac4631f0c689e6.jpg"
-                alt="">
+                alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">King's Bounty: Crossworlds</div>
                 <div class="d-flex pt-2">
@@ -829,7 +829,7 @@ if(isset($_POST['add_product'])){
             </div>
             <!-- Five -->
             <div class="swiper-slide">
-              <img class="image img-fluid" src="./img2/download-kings-bounty-crossworlds-offer-1t72c.jpg" alt="">
+              <a href="game.php"><img class="image img-fluid" src="./img2/download-kings-bounty-crossworlds-offer-1t72c.jpg" alt=""></a>
               <div class="box1">
                 <div class="text1 pt-3">Car Mechanic Simulator 2018</div>
                 <div class="d-flex pt-2">
@@ -852,7 +852,7 @@ if(isset($_POST['add_product'])){
         <div class="row">
           <!-- One -->
           <div class="col-md-8">
-            <img src="./img2/e2e8a321c10b02555b1a.jpg" class="image img-fluid rounded-4" alt="">
+            <a href="game.php"><img src="./img2/e2e8a321c10b02555b1a.jpg" class="image img-fluid rounded-4" alt=""></a>
           </div>
           <!-- Two -->
           <div class="col-md-4">

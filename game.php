@@ -12,6 +12,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   
 </head>
+<?php include 'header.php'; ?>
 <body class="bg-primary-color">
   <h1 class="mx-auto p-3" style="width: 300px;text-align: center; color: azure; padding-bottom: 25px; size: 200px;">God of War</h1>
   <div class="container">
@@ -147,8 +148,8 @@
           <div id="price">
             <span >$39.99</span>
           </div>
-          <a class="btn btn-primary " href="#" role="button"><strong>BUY NOW</strong></a>
-          <button type="button" class="btn btn-outline-secondary btn-block btn-md"><strong>ADD TO CART</strong></button>
+          <a class="btn btn-primary " href="./checkout.php" role="button"><strong>BUY NOW</strong></a>
+          <a href="./browse.php"><button type="button" class="btn btn-outline-secondary btn-block btn-md"><strong>Continue shopping</strong></button></a>
           
           <!--Flex Bootstrap 5-->
           <div class="d-flex flex-column bd-highlight md-3 font-roboto">
@@ -174,7 +175,7 @@
       </div>
     </div>
   </div>
-  
+  <?php include 'footer.php'; ?>
 </body>
 <script>
   $(document).ready(function(){

@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
       
-        <title>Document</title>
+        <title>Peaceful</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,8 +43,8 @@
               </div>
               <div class="col-md-4 col-12 text-right">
                 <p class="my-md-4 header-links">
-                  <a href="login.php" class="px-2">Sign in</a>
-                  <a href="register.php" class="px-1">Create an Account</a>
+                  <!-- <a href="login.php" class="px-2">Sign in</a>
+                  <a href="register.php" class="px-1">Create an Account</a> -->
                 </p>
               </div>
             </div>
@@ -67,19 +67,19 @@
                 <div class="collapse navbar-collapse" id="navbarExample01">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                      <a class="nav-link" aria-current="page" href="./admin_page.php">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="./admin_product.php">Product</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="./admin_order.php">Check</a>
                     </li>
                   </ul>
                 </div>
-                <form class="form-inline my-2 my-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
+                </form> -->
               </div>
             </nav>
             

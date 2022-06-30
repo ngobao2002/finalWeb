@@ -33,11 +33,7 @@
 
 
 <body class="bg-black">
-  <header>
-    <div class="container">
-
-    </div>
-  </header>
+  <?php include 'header.php'; ?>
 
   <main>
     <div class="container p-5">
@@ -249,18 +245,18 @@
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
               <li class="page-item">
-                <a class="page-link bg-black text-white" href="browse3.html" aria-label="Previous">
+                <a class="page-link bg-black text-white" href="browse3.php" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                 </a>
               </li>
-              <li class="page-item"><a class="page-link bg-black text-white" href="browse.html">1</a></li>
+              <li class="page-item"><a class="page-link bg-black text-white" href="browse.php">1</a></li>
               <li class="page-item"><a class="page-link bg-black text-white" href="browse2.html">2</a></li>
-              <li class="page-item"><a class="page-link bg-black text-white" href="browse3.html">3</a></li>
-              <li class="page-item"><a class="page-link bg-black text-white" href="browse4.html">4</a></li>
-              <li class="page-item"><a class="page-link bg-black text-white" href="browse5.html">5</a></li>
-              <li class="page-item"><a class="page-link bg-black text-white" href="browse6.html">6</a></li>
+              <li class="page-item"><a class="page-link bg-black text-white" href="browse3.php">3</a></li>
+              <li class="page-item"><a class="page-link bg-black text-white" href="browse4.php">4</a></li>
+              <li class="page-item"><a class="page-link bg-black text-white" href="browse5.php">5</a></li>
+              <li class="page-item"><a class="page-link bg-black text-white" href="browse6.php">6</a></li>
               <li class="page-item">
-                <a class="page-link bg-black text-white" href="browse5.html" aria-label="Next">
+                <a class="page-link bg-black text-white" href="browse5.php" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>
@@ -351,7 +347,7 @@
      </div>
     
   </main>
-  
+  <?php include 'footer.php'; ?>
  
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
