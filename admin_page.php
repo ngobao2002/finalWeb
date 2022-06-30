@@ -28,19 +28,27 @@ if(!isset($admin_id)){
     <div class="container">
         <div class="row pb-4 d-flex flex-justify-content-center flex-wrap">
             <div class="col-md-3">
+                <?php 
+                    $select_orders = mysqli_query($conn, "SELECT * FROM `orders`") or die('query failed');
+                    $number_of_orders = mysqli_num_rows($select_orders);
+                ?>
                 <div class="d-flex flex-column" id="order_placed">
                     <span class="border-top-2"><p class="p-2 m-1"><strong>Order Placed</strong></p></span>
                     <div class="d-flex justify-content-between">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="50" fill="dark" class="bi bi-cart-check-fill p-1" viewBox="0 0 16 16">
                         <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
                         </svg>
-
                         <!-- Data day ne -->
-                        <h3 class="p-2 text-end">10</h3>
+                        <!-- <h3 class="p-2 text-end">10</h3> -->
+                        <h3 class="p-2 text-end"><?php echo $number_of_orders; ?></h3>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
+                <?php 
+                    $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
+                    $number_of_products = mysqli_num_rows($select_products);
+                ?>
                 <div class="d-flex flex-column" id="product_added">
                 <span class="border-top-2"><p class="p-2 m-1"><strong>Product Added</strong></p></span>
                     <div class="d-flex justify-content-between">
@@ -49,11 +57,17 @@ if(!isset($admin_id)){
                         <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                         </svg>
                         <!-- Data day ne -->
-                        <h3 class="p-2 text-end">35</h3>
+                        <!-- <h3 class="p-2 text-end">35</h3> -->
+                        <h3 class="p-2 text-end"><?php echo $number_of_products; ?></h3>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
+                <?php 
+                    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'user'") or die('query failed');
+                    $number_of_users = mysqli_num_rows($select_users);
+                ?>
+                
                 <div class="d-flex flex-column" id="user">
                 <span class="border-top-2"><p class="p-2 m-1"><strong>User</strong></p></span>
                     <div class="d-flex justify-content-between">
@@ -61,11 +75,16 @@ if(!isset($admin_id)){
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                         </svg>
                         <!-- Data day ne -->
-                        <h3 class="p-2 text-end">3</h3>
+                        <!-- <h3 class="p-2 text-end">3</h3> -->
+                        <h3 class="p-2 text-end"><?php echo $number_of_users; ?></h3>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
+                <?php 
+                    $select_account = mysqli_query($conn, "SELECT * FROM `users`") or die('query failed');
+                    $number_of_account = mysqli_num_rows($select_account);
+                ?>
                 <div class="d-flex flex-column" id="total_account">
                 <span class="border-top-2"><p class="p-2 m-1"><strong>Total Account</strong></p></span>
                     <div class="d-flex justify-content-between">
@@ -74,7 +93,8 @@ if(!isset($admin_id)){
                         <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                         </svg>
                         <!-- Data day ne -->
-                        <h3 class="p-2 text-end">3</h3>
+                        <!-- <h3 class="p-2 text-end">3</h3> -->
+                        <h3 class="p-2 text-end"><?php echo $number_of_account; ?></h3>
                     </div>
                 </div>
             </div>

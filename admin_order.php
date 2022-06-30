@@ -1,3 +1,31 @@
+<?php
+
+include 'database.php';
+
+session_start();
+
+$admin_id = $_SESSION['admin_id'];
+
+if(!isset($admin_id)){
+   header('location:login.php');
+}
+
+if(isset($_POST['update_order'])){
+
+   $order_update_id = $_POST['order_id'];
+   $update_payment = $_POST['update_payment'];
+   mysqli_query($conn, "UPDATE `orders` SET payment_status = '$update_payment' WHERE id = '$order_update_id'") or die('query failed');
+   $message[] = 'payment status has been updated!';
+
+}
+
+if(isset($_GET['delete'])){
+   $delete_id = $_GET['delete'];
+   mysqli_query($conn, "DELETE FROM `orders` WHERE id = '$delete_id'") or die('query failed');
+   header('location:admin_order.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,125 +39,51 @@
 <body class="bg-primary-color p-2">
     <h1 class="mx-auto py-3 text-color" style="width: 500px;text-align: center; padding-bottom: 25px;">Admin Placed Order</h1>
     <div class="container">
+        <?php
+            $select_orders = mysqli_query($conn, "SELECT * FROM `orders`") or die('query failed');
+            if(mysqli_num_rows($select_orders) > 0){
+                while($fetch_orders = mysqli_fetch_assoc($select_orders)){
+        ?>
         <div class="row pb-2">
             <div class="col-md-4 pb-2">
                 <div class="card" style="width: auto;">
-                    <div class="card-header text-center"><strong>Order Id :<span>1</span></strong></div>      <!--chinh data trong span , id-->
+                    <div class="card-header text-center"><strong>Order Id :<span><?php echo $fetch_orders['user_id']; ?></span></strong></div>      
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
+                        <!-- <li class="list-group-item">
                             <div class="d-flex justify-content-between">
-                                <p>Placed On</p>
-                                <p>1</p>                                                                <!--chinh data trong p , span neu thich-->
+                                <p>Placed On: <span><?php echo $fetch_orders['placed_on']; ?></span></p>                                                            
                             </div>
+                        </li> -->
+                        <li class="list-group-item">
+                            <div class="d-flex justify-content-between">
+                                <p>Name : <span><?php echo $fetch_orders['name']; ?></span> </p>              
                         </li>
                         <li class="list-group-item">
                             <div class="d-flex justify-content-between">
-                                <p>Name</p>
-                                <p>1</p>                
+                                <p>Phone Number : <span><?php echo $fetch_orders['number']; ?></span> </p>                
                         </li>
                         <li class="list-group-item">
                             <div class="d-flex justify-content-between">
-                                <p>Phone Number</p>
-                                <p>1</p>                
+                                <p>Email : <span><?php echo $fetch_orders['email']; ?></span> </p>               
                         </li>
+                        <!-- <li class="list-group-item">
+                            <div class="d-flex justify-content-between">
+                                <p>Address : <span><?php echo $fetch_orders['address']; ?></span></p>               
+                        </li> -->
                         <li class="list-group-item">
                             <div class="d-flex justify-content-between">
-                                <p>Email</p>
-                                <p>1</p>                
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Address</p>
-                                <p>1</p>                
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Total Product</p>
-                                <p>1</p>                
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Total Price</p>
-                                <p>1</p>                
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex justify-content-between">
-                                <p>Payment Method</p>
-                                <p>1</p>                
-                        </li>
-                        <li class="list-group-item">
-                            <select class="form-select p-2" >
-                                <option selected>Pending</option>
-                                <option value="1">Completed</option>
-                            </select>
-                            <div class="d-flex justify-content-end p-2">
-                                <button type="button" class="btn btn-success mx-2" style="width: 30%;">Save </button>
-                                <button type="button" class="btn btn-danger " style="width: 30%;">Delete</button>
-                            </div>
+                                <p>Payment Method : <span><?php echo $fetch_orders['method']; ?></span> </p>            
                         </li>
                     </ul>
                     </div>
-                </div>
-            <div class="col-md-4 pb-2">
-                <div class="card" style="width: auto;">
-                    <div class="card-header text-center"><strong>Order Id :<span>2</span></strong> </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Placed On</p>
-                                    <p >3423523</p>
-                            </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Name</p>
-                                    <p>1</p>                
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Phone Number</p>
-                                    <p>1</p>                
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Email</p>
-                                    <p>user@gmail.com</p>                
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Address</p>
-                                    <p>1</p>                
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Total Product</p>
-                                    <p>1</p>                
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Total Price</p>
-                                    <p>1</p>                
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex justify-content-between">
-                                    <p>Payment Method</p>
-                                    <p>1</p>                
-                            </li>
-                            <li class="list-group-item">
-                            <select class="form-select p-2" >
-                                <option selected>Pending</option>
-                                <option value="1">Completed</option>
-                            </select>
-                            <div class="d-flex justify-content-end p-2">
-                                <button type="button" class="btn btn-success mx-2" style="width: 30%;">Save </button>
-                                <button type="button" class="btn btn-danger " style="width: 30%;">Delete</button>
-                            </div>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                
+                </div>               
             </div>
+            <?php
+         }
+        }else{
+            echo '<p class="empty">no orders placed yet!</p>';
+        }
+        ?>
         </div>
     </div>
 

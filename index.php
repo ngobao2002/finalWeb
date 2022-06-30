@@ -86,66 +86,8 @@ if(isset($_POST['add_product'])){
 <body class="bg-dark">
   <!--Header-->
 
-<<<<<<< HEAD
   <?php include 'header.php'; ?>
     
-=======
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 col-12">
-        </div>
-        
-        <!--Move Peaceful Store to the left-->
-        <div class="col-md-4 col-12 text-center">
-          <h2 class="my-md-3 site-title text-white">Peaceful Store</h2>
-        </div>
-        <div class="col-md-4 col-12 text-right">
-          <p class="my-md-4 header-links">
-            <a href="login.php" class="px-2">Sign in</a>
-            <a href="register.php" class="px-1">Create an Account</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container p-1">
-      <nav class="navbar navbar-expand-lg navbar-light bg: #212529">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link btn btn-outline-dark btn-floating " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark btn-floating " href="browse.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark btn-floating " href="#">About</a>
-              </li>
-            </ul>
-          </div>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-        </div>
-      </nav>
-      
-    </div>
-
-  </header>
->>>>>>> a53625bd92206bb8c5c93e13705c1b9b0a90417a
 
   <!--Main section-->
   <main>

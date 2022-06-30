@@ -1,3 +1,15 @@
+<?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,13 +55,22 @@
               </div>
               <div class="col-md-4 col-12 text-right">
                 <p class="my-md-4 header-links">
+                    <i class="bi bi-person"></i>
                   <a href="login.php" class="px-2">Sign in</a>
                   <a href="register.php" class="px-1">Create an Account</a>
                 </p>
               </div>
             </div>
           </div>
-      
+          <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+         </div>
+
+         <div class="user-box">
+            <p class="text-white">email : <span><?php echo $_SESSION['user_email']; ?></span></p>
+            <a href="logout.php" class="delete-btn">logout</a>
+         </div>
           <div class="container p-1">
             <nav class="navbar navbar-expand-lg navbar-light bg: #212529">
               <div class="container-fluid">
@@ -80,6 +101,7 @@
                 <form class="form-inline my-2 my-lg-0">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
+                
               </div>
             </nav>
             
