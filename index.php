@@ -149,7 +149,7 @@
           </div>
           <!-- Three -->
           <div class="swiper-slide">
-            <img class="image img-fluid" src="./img2/r6s-y6-epic-rainbow.png" alt="">
+            <img class="image img-fluid" src="./img2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7.jpg" alt="">
             <div class="box1 pt-3">
               <div class="text1">God Of War</div>
               <div class="d-flex pt-2">
@@ -198,7 +198,7 @@
             <div class="box-image">
               <img src="./img2/egs-battlefield2042-dice-s1-2560x1440-2560x1440-3004c8a4629f.jpg"
                 class="image img-fluid rounded-4">
-              <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button>
+              <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
               <h2 style="text-align: center; color:white;font-size: 18px;">Battlefield™ 2042 - Save Up to 50% Off</h2>
@@ -216,13 +216,13 @@
             <div class="box-image">
               <img src="./img2/en-egs-fn-naruto-rivals-breaker-1920x1080-380c0df5250b.jpg"
                 class="image img-fluid rounded-4">
-              <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button>
+              <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
               <h2 style="text-align: center; color:white;font-size: 18px;">Fortnite - Naruto Part 2</h2>
               <p style="color: grey;text-align: center;">Naruto's friends (and foes) arrive to join the rest of Team 7
                 in the Fortnite Item Shop!</p>
-              <p><a href="#" class="text-light bg-dark">Learn More</a></p>
+              <p><a href="#" class="text-light bg-dark ">Learn More</a></p>
             </div>
           </div>
           <!-- Three -->
@@ -230,7 +230,7 @@
             <div class="box-image">
               <img src="./img2/egs-a-plague-tale-requiem-breaker-1920x1080-a9b3d01272f0.jpg"
                 class="image img-fluid rounded-4">
-              <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button>
+              <!-- <button type="button" class="btn btn-outline-light" title="Add to withlist">+</button> -->
             </div>
             <div class="container p-2">
               <h2 style="text-align: center; color:white;font-size: 18px;">A Plague Tale: Requiem - Available October 18
@@ -388,53 +388,53 @@
               </div>
             </div>
             <!-- Ten -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/winderling.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Wunderling DX</div>
                 <div class="pt-2" style="color: white;">₫140,900</div>
               </div>
-            </div>
+            </div> -->
             <!-- Eleven -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/download-imagine-earth-offer-12owm.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Imagine Earth</div>
                 <div class="pt-2" style="color: white;">₫220,900</div>
               </div>
-            </div>
+            </div> -->
             <!-- Twelve -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/download-wildermyth-offer-rmvpz.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Wildermyth</div>
                 <div class="pt-2" style="color: white;">₫233,000</div>
               </div>
-            </div>
+            </div> -->
             <!-- Thirteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/startwar.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">LEGO® Star Wars™: The Skywalker Saga</div>
                 <div class="pt-2" style="color: white;">₫822,500</div>
               </div>
-            </div>
+            </div> -->
             <!-- Fourteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/download-weird-west-offer-13tjq.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Weird West</div>
                 <div class="pt-2" style="color: white;">₫599,900</div>
               </div>
-            </div>
+            </div> -->
             <!-- Fifteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/strange.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">STRANGER OF PARADISE FINAL FANTASY ORIGIN</div>
                 <div class="pt-2" style="color: white;">₫1,339,900</div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="row">
             <div class="swiper-button-next"></div>
@@ -569,77 +569,77 @@
               </div>
             </div>
             <!-- Twelve -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/prison.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Prison Architect</div>
                 <div class="pt-2" style="color: white;">₫249,998</div>
               </div>
-            </div>
+            </div> -->
             <!-- Thirteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/chivalry.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Chivalry 2</div>
                 <div class="pt-2" style="color: white;">₫370,000</div>
               </div>
-            </div>
+            </div> -->
             <!-- Fourteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/ranch.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Ranch Simulator</div>
                 <div class="pt-2" style="color: white;">₫220,000</div>
               </div>
-            </div>
+            </div> -->
             <!-- Fifteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/eve.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">EVE Online</div>
                 <div class="pt-2" style="color: white;">Free</div>
               </div>
-            </div>
+            </div> -->
             <!-- Sixteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/warship.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">World of Warships</div>
                 <div class="pt-2" style="color: white;">Free</div>
               </div>
-            </div>
+            </div> -->
             <!-- Seventeen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/genshin.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">Genshin Impact</div>
                 <div class="pt-2" style="color: white;">Free</div>
               </div>
-            </div>
+            </div> -->
             <!-- Eightteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/snow.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">EVE Online</div>
                 <div class="pt-2" style="color: white;">₫380,000</div>
               </div>
-            </div>
+            </div> -->
             <!-- Nineteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/pingball.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">EVE Online</div>
                 <div class="pt-2" style="color: white;">Free</div>
-              </div>
-            </div>
+              </div> -->
+            <!-- </div> -->
             <!-- Nineteen -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <img class="image img-fluid" src="./img2/core.png" alt="">
               <div class="box1 pt-3">
                 <div class="text1">EVE Online</div>
                 <div class="pt-2" style="color: white;">Free</div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="row">
             <div class="swiper-button-next"></div>
