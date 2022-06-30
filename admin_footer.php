@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        
       
         <!-- CSS only -->
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      
+        <title>Document</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,42 +63,72 @@
                 ></a>
                 </section>
 
-            <section>
-                <form>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-auto">
-                    <p class="pt-2">
-                        <strong>Sign up for our newsletter</strong>
-                    </p>
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                      <!-- Grid row -->
+                      <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                          <!-- Content -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Peaceful Store
+                          </h6>
+                          <p>
+                            Here you can buy the game you want with acceptable price.
+                          </p>
+                        </div>
+                        <!-- Grid column -->
+                
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                          </h6>
+                          <p>
+                            <a href="#!" class="text-reset">Game</a>
+                          </p>
+                          <p>
+                            <a href="#!" class="text-reset">Game</a>
+                          </p>
+                          <p>
+                            <a href="#!" class="text-reset">Game</a>
+                          </p>
+                          <p>
+                            <a href="#!" class="text-reset">Game</a>
+                          </p>
+                        </div>
+                        <!-- Grid column -->
+                
+                        
+                        <!-- Grid column -->
+                
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                          </h6>
+                          <p><i class="fas fa-home me-3"></i> Da Nang, DN 10047, VN</p>
+                          <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            ppn243@gmail.com
+                          </p>
+                          <p><i class="fas fa-phone me-3"></i> + 09 866 123 87</p>
+                          <p><i class="fas fa-print me-3"></i> + 06 123 143 54</p>
+                        </div>
+                        <!-- Grid column -->
+                      </div>
+                      <!-- Grid row -->
                     </div>
-                    <div class="col-md-5 col-12">
-                    <div class="form-outline form-white mb-4">
-                        <input type="email" id="form5Example21" class="form-control" />
-                        <label class="form-label" for="form5Example21">Email address</label>
-                    </div>
-                    </div>
-                    <div class="col-auto">
-                    <button type="submit" class="btn btn-outline-light mb-4">
-                        Subscribe
-                    </button>
-                    </div>
-                </div>
-                </form>
-            </section>
-
-            <section class="mb-4">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                eum harum corrupti dicta, aliquam sequi voluptate quas.
-                </p>
-            </section>
+                  </section>
+                  <!-- Section: Links  -->
+            </div>
             
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <a class="text-white" href="https://mdbootstrap.com/">Peaceful.com</a>
             </div>
-        </div>
         </footer>
 
       </body>
