@@ -13,13 +13,15 @@ if (isset($_POST['submit'])) {
     $email= $_POST['email'];
     $password = md5($_POST['password']);
     $cpassword = md5($_POST['cpassword']);
+    $user_type = $_POST['user_type'];
 
+    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$password'") or die('query failed');
     if ($password == $cpassword){
         $sql = "SELECT * FROM users WHERE email = '$email'";
         $result = mysqli_query($conn, $sql);
         if(!$result->num_rows > 0) {
-            $sql = "INSERT INTO users (username, email, password)
-                    VALUES('$username', '$email', '$password')";
+            $sql = "INSERT INTO users (username, email, password, user_type)
+                    VALUES('$username', '$email', '$password', '$user_type')";
             $result = mysqli_query($conn, $sql);
             if($result) {
                 echo "<script>alert('Wow! User Registration Successful.')</script>";
@@ -89,6 +91,12 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="input-group">
                 <input class="text-white" type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+            </div>
+            <div class="input-group pt-3">
+                <select name="user_type" class="box">
+                    <option value="user">user</option>
+                    <option value="admin">admin</option>
+                </select>
             </div>
             <div class="input-group pt-3">
                 <button name="submit" class="btn mx-auto font-roboto">Register </button>

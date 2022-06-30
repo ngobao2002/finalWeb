@@ -72,7 +72,7 @@
                       <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Product</a>
+                      <a class="nav-link" href="./admin_product.php">Product</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">About</a>

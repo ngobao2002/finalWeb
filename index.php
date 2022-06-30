@@ -1,3 +1,52 @@
+<?php
+
+include 'database.php';
+
+session_start();
+
+$user_id = $_SESSION['user_id'];
+
+if(!isset($user_id)){
+   header('location:login.php');
+}
+
+if(isset($_POST['add_product'])){
+
+  $name = $_POST['name'];
+  $price = $_POST['price'];
+  $image = $_FILES['image']['name'];
+  $image_size = $_FILES['image']['size'];
+  $image_tmp_name = $_FILES['image']['tmp_name'];
+  $image_folder = './uploaded_game/'.$image;
+
+   $check_cart_numbers = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
+
+   if(mysqli_num_rows($check_cart_numbers) > 0){
+      $message[] = 'already added to cart!';
+   }else{
+      mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, quantity, image) VALUES('$user_id', '$product_name', '$product_price', '$product_quantity', '$product_image')") or die('query failed');
+      $message[] = 'product added to cart!';
+   }
+   $select_product_name = mysqli_query($conn, "SELECT name FROM `products` WHERE name = '$name'") or die('query failed');
+
+   if(mysqli_num_rows($select_product_name) > 0){
+      $message[] = 'Game already added';
+   }else{
+      $add_product_query = mysqli_query($conn, "INSERT INTO `products`(name, price, image) VALUES('$name', '$price', '$image')") or die('query failed');
+
+      if($add_product_query){
+         if($image_size > 2000000){
+            $message[] = 'Image size is too large';
+         }else{
+            move_uploaded_file($image_tmp_name, $image_folder);
+            $message[] = 'Game added successfully!';
+         }
+      }else{
+         $message[] = 'Game could not be added!';
+      }
+   }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +60,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  <title>Document</title>
+  <title>Peaceful</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,68 +88,12 @@
 <body class="bg-dark">
   <!--Header-->
 
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 col-12">
-        </div>
-        
-        <!--Move Peaceful Store to the left-->
-        <div class="col-md-4 col-12 text-center">
-          <h2 class="my-md-3 site-title text-white">Peaceful Store</h2>
-        </div>
-        <div class="col-md-4 col-12 text-right">
-          <p class="my-md-4 header-links">
-            <a href="login.php" class="px-2">Sign in</a>
-            <a href="register.php" class="px-1">Create an Account</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container p-1">
-      <nav class="navbar navbar-expand-lg navbar-light bg: #212529">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-          </div>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-        </div>
-      </nav>
-      
-    </div>
-
-  </header>
+  <?php include 'header.php'; ?>
+    
 
   <!--Main section-->
   <main>
-
-    
     <!--First Slider-->
-    
     <div class="container-fluid bg-dark">
       <div class="site-slider">
         <div class="slider-one container px-5">
@@ -114,9 +107,12 @@
             <img src="./img/home6.jpg" class="img-fluid" alt="Banner 3">
           </div>
         </div>
+        <div class="slider-btn">
+          <span class="prev position-top"><i class="fas fa-chevron-left"></i></span>
+          <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+        </div>
       </div>
     </div>
-    
 
     <!-- Element-one -->
     <div class="container p-5">
@@ -182,7 +178,7 @@
                 <div class="pt-2" style="color: white;">₫139,500</div>
               </div>
             </div>
-          </div>
+          </div>     
         </div>
         <div class="row">
           <div class="swiper-button-next"></div>
@@ -190,6 +186,31 @@
         </div>
       </div>
     </div>
+
+    <section class="New game">
+      
+      <div class="container">
+      <h2 class="text-white px-5">New Games</h2>
+        <div class="row d-flex flex-wrap">
+            <?php
+                  $select_products = mysqli_query($conn, "SELECT * FROM products") or die('query failed');
+                  if(mysqli_num_rows($select_products) > 0){
+                     while($fetch_products = mysqli_fetch_assoc($select_products)){
+               ?>
+              <form action="" method="post" class="col-3 card mx-2 bg-dark border border-light text-light">
+                <img class="image d-block w-100 p-4" src="./uploaded_game/<?php echo $fetch_products['image']; ?>" alt="" >
+                <div class="name"><?php echo $fetch_products['name']; ?></div>
+                <div class="price">$<?php echo $fetch_products['price']; ?></div>
+              </form>
+                <?php
+                    }
+                }else{
+                    echo '<p class="empty">no products added yet!</p>';
+                }
+                ?> 
+          </div>  
+      </div>
+    </section>
       <!-- Element-two -->
       <div class="container p-5">
         <div class="row">
@@ -847,9 +868,11 @@
         </div>
       </div>
   </main>
-  <footer>
+  
+  
 
-  </footer>
+  <?php include 'footer.php'; ?>
+  
 
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
